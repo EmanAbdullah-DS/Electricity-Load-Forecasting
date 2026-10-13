@@ -6,7 +6,7 @@ WATT turns time-stamped electricity and weather observations into short-term dem
 
 > **Evaluation boundary:** The supplied source dataset covers 2017. The reported scores below are from a December 2017 chronological holdout. They are historical evaluation results, not a guarantee of future performance and not live telemetry.
 
-![Electricity Load Forecasting](load.png)
+![Electricity Load Forecasting](assets/load.png)
 
 
 ## Project at a glance
@@ -45,7 +45,7 @@ Metric definitions:
 
 The total-load model's holdout MAE was approximately 36.4% lower than the best naive baseline MAE reported by the notebook. Zone 3 is a known weak point: its MAPE is higher than the strongest naive comparator on this test period. Model quality should therefore not be summarized by a single aggregate score alone.
 
-![December 2017 holdout MAPE by target](assets/images/model_performance_mape.png)
+![December 2017 holdout MAPE by target](assets/model_performance_mape.png)
 
 ## Data and forecasting context
 
@@ -60,7 +60,7 @@ The model workflow uses information that would be available at forecast time, in
 
 The supplied data is a single year. That is sufficient to build and evaluate a baseline forecasting workflow, but it limits the evidence available for unusual seasons, changing customer behavior, long-term trends, and rare events.
 
-![Daily average electricity demand across 2017](assets/images/load_profile_2017.png)
+![Daily average electricity demand across 2017](assets/load_profile_2017.png)
 
 
 ## Methodology
